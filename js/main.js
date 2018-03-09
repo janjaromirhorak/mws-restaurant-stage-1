@@ -6,6 +6,13 @@ var map,
     markers = [];
 
 /**
+ * update restaurants when the inputs change
+ */
+document.getElementById('neighborhoods-select').addEventListener('change', updateRestaurants);
+document.getElementById('cuisines-select').addEventListener('change', updateRestaurants);
+
+
+/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
