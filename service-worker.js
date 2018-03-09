@@ -1,4 +1,4 @@
-const cache_version = 'v20';
+const cache_version = 'v1-cache';
 
 self.addEventListener('activate', (event) => {
     // delete old caches
