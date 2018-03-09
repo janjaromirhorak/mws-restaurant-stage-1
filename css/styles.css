@@ -201,9 +201,25 @@ nav h1 a {
     display: inline-block;
     max-width: 250px;
     margin: 1rem;
-    padding: 1rem 1rem 4rem 1rem;
 
     position: relative;
+}
+
+#restaurants-list li > a {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    left:0;
+    top:0;
+    height: 100%;
+
+    background: white;
+
+    transition: background 200ms;
+}
+
+#restaurants-list li > a:hover, #restaurants-list li > a:focus {
+    background: #ffe999;
 }
 
 #restaurants-list .restaurant-img {
@@ -229,28 +245,6 @@ nav h1 a {
 #restaurants-list p {
     margin: 0;
     font-size: 11pt;
-}
-
-#restaurants-list li a {
-    background-color: #ffa500;
-    border-bottom: 3px solid #eee;
-    color: #fff;
-    display: inline-block;
-    font-size: 10pt;
-    margin: 15px 0 0;
-    padding: 8px 30px 10px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    position: absolute;
-    bottom: 1rem;
-
-    transition: background-color 200ms;
-}
-
-#restaurants-list li a:hover, #restaurants-list li a:focus {
-    background: #ffc700;
 }
 
 /* ====================== Restaurant Details ====================== */
