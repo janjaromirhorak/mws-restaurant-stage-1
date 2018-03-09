@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Restaurant Reviews</title>
@@ -10,43 +9,40 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-<header>
-    <nav>
-        <h1><a href="/" tabindex="1">Restaurant Reviews</a></h1>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <h1><a href="/" tabindex="1">Restaurant Reviews</a></h1>
+        </nav>
+    </header>
 
-<main id="maincontent">
-    <section id="map-container">
-        <div id="map"></div>
-    </section>
-    <section>
-        <div class="filter-options">
-            <h2>Filter Results</h2>
-            <select tabindex="2" id="neighborhoods-select" name="neighborhoods" title="Pick a neighborhood">
+    <main id="maincontent">
+        <section id="map-container">
+            <div id="map"></div>
+        </section>
+        <section>
+            <div class="filter-options">
+                <h2>Filter Results</h2>
+                <select tabindex="2" id="neighborhoods-select" name="neighborhoods" title="Pick a neighborhood">
                 <option value="all">All Neighborhoods</option>
             </select>
-            <select tabindex="3" id="cuisines-select" name="cuisines" title="Pick a cuisine">
+                <select tabindex="3" id="cuisines-select" name="cuisines" title="Pick a cuisine">
                 <option value="all">All Cuisines</option>
             </select>
-        </div>
-        <ul id="restaurants-list"></ul>
-    </section>
-</main>
+            </div>
+            <ul id="restaurants-list"></ul>
+        </section>
+    </main>
 
-<script src="js/sw_helper.js"></script>
-<script src="js/dbhelper.js"></script>
-<script src="js/main.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqz6kV8g9HUboeQJVWU68NXnE2_4KGqyY&libraries=places&callback=initMap"></script>
+    <script src="js/sw_helper.js"></script>
+    <script src="js/dbhelper.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqz6kV8g9HUboeQJVWU68NXnE2_4KGqyY&libraries=places&callback=initMap"></script>
 
 
-<footer id="footer">
-    Copyright (c) 2017 <a href="/" tabindex="1000"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
-</footer>
+    <footer id="footer">
+        Copyright (c) 2017 <a href="/" tabindex="1000"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
 
 </body>
-
 </html>
