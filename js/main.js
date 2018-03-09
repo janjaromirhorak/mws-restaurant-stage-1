@@ -166,7 +166,7 @@ createRestaurantHTML = (restaurant, idx) => {
 
     li.append(a);
 
-    return li
+    return li;
 };
 
 /**
