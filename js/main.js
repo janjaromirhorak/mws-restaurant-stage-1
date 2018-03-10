@@ -137,16 +137,18 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  * Create restaurant HTML.
  */
 createRestaurantHTML = (restaurant) => {
+    const acessibleText = `Restaurant “${restaurant.name}”`;
+
     const li = document.createElement('li');
 
     const a = document.createElement('a');
-    a.setAttribute('aria-label', restaurant.name);
+    a.setAttribute('aria-label', acessibleText);
     a.href = DBHelper.urlForRestaurant(restaurant);
 
     const image = document.createElement('img');
     image.className = 'restaurant-img';
     image.src = DBHelper.imageUrlForRestaurant(restaurant);
-    image.setAttribute('alt', restaurant.name);
+    image.setAttribute('alt', acessibleText);
     a.append(image);
 
     const name = document.createElement('h2');
